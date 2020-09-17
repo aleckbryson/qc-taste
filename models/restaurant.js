@@ -6,6 +6,7 @@ module.exports = function(sequelize, DataTypes) {
 
   Restaurant.associate = function(models) {
     Restaurant.belongsTo(models.User);
+    Restaurant.belongsTo(models.Categories)
     Restaurant.hasMany(models.Review);
   };
 

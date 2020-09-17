@@ -2,7 +2,11 @@ var db = require("../models");
 
 module.exports = function(app) {
   app.get("/api/restaurants/:id/reviews", function(req, res) {
-    db.Review.findAll({ where: { RestaurantId: req.params.id }})
+    db.Review.findAll({ where: { RestaurantId: req.params.id }}).then(data => {
+      res.json(data)
+    }).catch(err => {
+      console.log(err)
+    })
   });
 
   app.post("/api/restaurants/:id/reviews", function(req, res) {

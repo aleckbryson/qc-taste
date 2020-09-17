@@ -1,8 +1,8 @@
 const db = require("../models");
 
 module.exports = function (app) {
-    app.get("api/:category?", (req, res) => {
-        db.Category.findAll({
+    app.get("/api/categories/:category?", (req, res) => {
+        db.Categories.findAll({
             where: {
                 routeName: req.params.category
             },
@@ -11,4 +11,13 @@ module.exports = function (app) {
             res.json(categories);
         });
     });
+
+    app.post("/api/categories", (req, res) => {
+        db.Categories.create({
+            name: req.body.name
+        }).then(newCat => {
+            res.json(newCat);
+        });
+    });
+
 };
