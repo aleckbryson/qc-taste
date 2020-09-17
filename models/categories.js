@@ -4,9 +4,7 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   Categories.associate = function(models) {
-    Categories.belongsToMany(models.Restaurant, {
-      through: "RestaurantCatagories"
-    });
+    Categories.hasMany(models.Restaurant);
   };
 
   return Categories;
