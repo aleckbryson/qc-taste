@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Queen City Taste</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"> -->
+  <link href="stylesheets/style.css" rel="stylesheet">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans+Condensed:ital,wght@1,300&family=Pacifico&family=Permanent+Marker&family=Quicksand:wght@300&family=Syne:wght@600&display=swap"
+  rel="stylesheet">
+</head>
+
+<body>
+  <!-- <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/logout">
+        Logout
+      </a>
+    </div>
+  </div>
+</nav> -->
+  <div class="container border-0">
+    <div class="row">
+      <div class="col-md-6 bg-light member-post" id="post-form">
+        <h2 class="postform">Post <span class="member-name"></span></h2>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Post Title</label>
+            <input type="post-title" class="form-control" id="exampleFormControlInput1" placeholder="Post Title">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Restuarant Name</label>
+            <input type="restuarant" class="form-control" id="exampleFormControlInput1" placeholder="Restuarant">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Category</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Italian</option>
+              <option>German</option>
+              <option>Indian</option>
+              <option>Japanese</option>
+              <option>Chinese</option>
+              <option>Mexican</option>
+              <option>Mediterranean</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Post</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-dark" id="post-button">Post</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+
+</body>
+
+</html>
