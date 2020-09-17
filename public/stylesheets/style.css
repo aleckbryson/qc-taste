@@ -96,7 +96,7 @@ body {
 }
 
 #post-button {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .logform {
@@ -110,8 +110,8 @@ body {
   text-align: center;
   font-family: 'Syne', sans-serif;
   font-size: 45px;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 /* h2 {
