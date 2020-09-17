@@ -7,7 +7,7 @@ body {
   background-image: url("restaurant_photo.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
 }
 
@@ -108,6 +108,6 @@ footer {
   text-align: center;
   padding-bottom: 20px;
   font-family: 'Quicksand', sans-serif;
-  font-size: 21px;
+  font-size: 17px;
   background-image: url("restaurant_photo.jpg");
 }
