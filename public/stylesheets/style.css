@@ -47,6 +47,40 @@ body {
   border-radius: 15px;
 }
 
+.member-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin: auto;
+  border-radius: 15px;
+}
+
+.member-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin: auto;
+  padding-left: -130px;
+  padding-right: -130px;
+  border-radius: 15px;
+}
+
+/* #posts {
+  margin-right: -30px;
+  margin-left: -30px;
+} */
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 15px;
+}
+
 #qc {
   color: white;
   font-size: 140px;
@@ -67,11 +101,50 @@ body {
   margin-top: 170px;
 }
 
+#signup-form {
+  margin-top: 130px;
+}
+
+#post-form {
+  margin-top: 130px;
+  padding: auto;
+}
+
+#main {
+  margin-top: 100px;
+  padding: auto;
+}
+
+#post-button {
+  margin-bottom: 40px;
+}
+
+#main-button {
+  margin-top: 20px;
+  margin-bottom:25px;
+}
+
 .logform {
   text-align: center;
   font-family: 'Syne', sans-serif;
   font-size: 45px;
   margin-top: 25px;
+}
+
+.postform {
+  text-align: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 45px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.mainpage{
+  text-align: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 45px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 /* h2 {
