@@ -47,6 +47,15 @@ body {
   border-radius: 15px;
 }
 
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 15px;
+}
+
 #qc {
   color: white;
   font-size: 140px;
