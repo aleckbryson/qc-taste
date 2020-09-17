@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS qc_taste;
+CREATE DATABASE qc_taste;
+
