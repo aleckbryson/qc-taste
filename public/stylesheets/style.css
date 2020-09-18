@@ -124,6 +124,15 @@ body {
   margin-bottom:25px;
 }
 
+#restaurant-name {
+  font-family: 'Syne', sans-serif;
+  /* color:rgb(35, 49, 44); */
+}
+
+#post-title{
+  font-family: 'Syne', sans-serif;
+}
+
 .logform {
   text-align: center;
   font-family: 'Syne', sans-serif;
