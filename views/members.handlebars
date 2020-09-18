@@ -30,17 +30,19 @@
           </li> -->
       </ul>
       <div class="list-group" id="posts">
+        {{#each reviews}}
         <a href="#" class="list-group-item list-group-item-action active">
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1" id="post-title">Post Title</h5>
-            <h5 class="mb-1" id="restaurant-name">Restaurant Name</h5>
-            <small>3 days ago</small>
+            <h5 class="mb-1" id="post-title">{{this.title}}</h5>
+            <h5 class="mb-1" id="restaurant-name">{{this.restaurant}}</h5>
+            <small>{{this.date}}</small>
           </div>
-          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+          <p class="mb-1">{{this.review}}
           </p>
-          <small>@Username</small>
+          <small>@{{this.username}}</small>
         </a>
-        <a href="#" class="list-group-item list-group-item-action">
+        {{/each}}
+        {{!-- <a href="#" class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1" id="post-title">Post Title</h5>
             <h5 class="mb-1" id="restaurant-name">Restaurant Name</h5>
@@ -59,7 +61,7 @@
           <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
           </p>
           <small class="text-muted">@Username</small>
-        </a>
+        </a> --}}
         <button type="submit" class="btn btn-outline-dark" id="main-button">Make A New Post!</button>
       </div>
     </div>
