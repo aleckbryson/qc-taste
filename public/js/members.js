@@ -5,7 +5,4 @@ $(document).ready(() => {
     $(".member-name").text(data.username);
   });
 
-  $.get("/api/restaurants/:id").then(data => {
-    $(".vape-god").text(data.name);
-  });
 });

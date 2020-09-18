@@ -1,11 +1,7 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
     "password": "8287141Gk!",
-=======
-    "password": "rootroot",
->>>>>>> f702e3225f5a414a3f2e30494d939855b243a397
     "database": "qc_taste",
     "host": "127.0.0.1",
     "dialect": "mysql"
