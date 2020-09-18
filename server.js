@@ -1,7 +1,14 @@
 // Requiring necessary npm packages
 const express = require("express");
 const session = require("express-session");
+<<<<<<< HEAD
 const exphbs = require("express-handlebars");
+=======
+const Handlebars = require("handlebars");
+const exphbs = require("express-handlebars");
+const { allowInsecurePrototypeAccess } = require("@handlebars/allow-prototype-access");
+// Requiring passport as we've configured it
+>>>>>>> 16d211970d9f958b92dcc189261e76c2154af935
 const passport = require("./config/passport");
 
 
@@ -18,8 +25,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 // We need to use sessions to keep track of our user's login status
+<<<<<<< HEAD
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+=======
+app.engine("handlebars", exphbs({
+  handlebars: allowInsecurePrototypeAccess(Handlebars),
+  defaultLayout: "main"
+}));
+app.set("view engine", "handlebars");
+
+>>>>>>> 16d211970d9f958b92dcc189261e76c2154af935
 app.use(
   session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
 );
@@ -33,8 +49,9 @@ require("./routes/category-api-routes.js")(app);
 require("./routes/restaurant-api-routes.js")(app);
 require("./routes/review-api-routes.js")(app);
 
+
 // Syncing our database and logging a message to the user upon success
-db.sequelize.sync({force:false}).then(() => {
+db.sequelize.sync().then(() => {
   app.listen(PORT, () => {
     console.log(
       "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
