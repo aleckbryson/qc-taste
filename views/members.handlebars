@@ -34,12 +34,12 @@
         <a href="#" class="list-group-item list-group-item-action active">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1" id="post-title">{{this.title}}</h5>
-            <h5 class="mb-1" id="restaurant-name">{{this.restaurant}}</h5>
+            <h5 class="mb-1" id="restaurant-name">{{this.Restaurant.name}}</h5>
             <small>{{this.date}}</small>
           </div>
-          <p class="mb-1">{{this.review}}
+          <p class="mb-1">{{this.body}}
           </p>
-          <small>@{{this.username}}</small>
+          <small>@{{this.User.username}}</small>
         </a>
         {{/each}}
         {{!-- <a href="#" class="list-group-item list-group-item-action">
