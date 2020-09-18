@@ -130,7 +130,12 @@ body {
 }
 
 #post-title{
-  font-family: 'Syne', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+small {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .logform {
