@@ -31,9 +31,9 @@
       </ul>
       <div class="list-group" id="posts">
         {{#each reviews}}
-        <a href="#" class="list-group-item list-group-item-action active">
+        <a href="#" class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1" id="post-title">{{this.title}}</h5>
+            {{!-- <h5 class="mb-1" id="post-title">{{this.title}}</h5> --}}
             <h5 class="mb-1" id="restaurant-name">{{this.Restaurant.name}}</h5>
             <small>{{this.date}}</small>
           </div>
