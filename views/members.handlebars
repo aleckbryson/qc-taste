@@ -109,6 +109,9 @@
 
   $(".nav-item").on("click", function (event) {
     event.preventDefault();
+
+    const activeButton = $("<a>");
+    activeButton.addClass("active");
     renderReviews(event.target.id);
   })
   renderReviews(1);
