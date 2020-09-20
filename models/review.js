@@ -6,7 +6,8 @@ module.exports = function(sequelize, DataTypes) {
 
   Review.associate = function(models) {
     Review.belongsTo(models.User);
-    Review.belongsTo(models.Restaurant);
+    Review.belongsTo(models.Restaurant)
+    
   };
 
   return Review;

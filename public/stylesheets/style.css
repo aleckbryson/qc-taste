@@ -1,6 +1,6 @@
 form.signup,
 form.login {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 body {
@@ -20,7 +20,6 @@ body {
   margin-top: 160px;
   border-radius: 15px;
 }
-
 .logo {
   float: right;
   width: 35%;
