@@ -1,11 +1,12 @@
 module.exports = function(sequelize, DataTypes) {
-  const Categories = sequelize.define("Categories", {
+  const Category = sequelize.define("Category", {
     name: DataTypes.STRING
   });
 
-  Categories.associate = function(models) {
-    Categories.hasMany(models.Restaurant);
+  Category.associate = function(models) {
+    Category.hasMany(models.Restaurant);
+    
   };
 
-  return Categories;
+  return Category;
 };

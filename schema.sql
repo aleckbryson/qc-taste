@@ -1,7 +1,3 @@
 DROP DATABASE IF EXISTS qc_taste;
-<<<<<<< HEAD
-CREATE DATABASE qc_taste;
-=======
 CREATE DATABASE qc_taste;
 
->>>>>>> 895e39d0b6bfef8d5f0600701a69390604593474

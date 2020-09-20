@@ -3,5 +3,6 @@ $(document).ready(() => {
   // and updates the HTML on the page
   $.get("/api/restaurants/:id").then(data => {
     $(".test").text(data.name);
+
   });
 });
