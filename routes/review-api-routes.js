@@ -11,8 +11,8 @@ module.exports = function(app) {
 
   app.post("/api/restaurants/:id/reviews", function(req, res) {
     db.Review.create({
-      // UserId: req.user.id,
-      UserId: 1,
+      UserId: req.user.id,
+      //UserId: 1,
       RestaurantId: req.params.id,
       body: req.body.body,
     }).then(function(newReview) {

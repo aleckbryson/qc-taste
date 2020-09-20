@@ -5,25 +5,22 @@
       <h2 class="mainpage">QC Taste</h2>
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Chinese</a>
+          <a class="nav-link active" href="#" value="1" id="italian">Italian</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Italian</a>
+          <a class="nav-link" href="#" value="2" id="american">American</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">American</a>
+          <a class="nav-link" href="#" value="3" id="indian">Indian</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Indian</a>
+          <a class="nav-link" href="#" value="4" id="latin">Latin</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Mexican</a>
+          <a class="nav-link" href="#" value="5" id="asian">Asian</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Japanese</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Seafood</a>
+          <a class="nav-link" href="#" value="6" id="seafood">Seafood</a>
         </li>
         <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Make A New Post!</a>
@@ -31,9 +28,9 @@
       </ul>
       <div class="list-group" id="posts">
         {{#each reviews}}
-        <a href="#" class="list-group-item list-group-item-action active">
+        <a href="#" class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1" id="post-title">{{this.title}}</h5>
+            {{!-- <h5 class="mb-1" id="post-title">{{this.title}}</h5> --}}
             <h5 class="mb-1" id="restaurant-name">{{this.Restaurant.name}}</h5>
             <small>{{this.date}}</small>
           </div>
@@ -70,3 +67,43 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/members.js"></script>
+<script type="text/javascript">
+
+  function renderReviews(id) {
+
+    $.ajax({
+      type: "GET",
+      url: "/api/categories" + id
+    }).then(data => {
+      console.log(data);
+//      $("#posts").empty();
+
+ //     for (var i = 0; i < categories.length; i++) {
+//        var a = $(`
+ //       <a href="#" class="list-group-item list-group-item-action">
+ //         <div class="d-flex w-100 justify-content-between">
+ //           <h5 class="mb-1" id="restaurant-name">${this.Restaurant.name}</h5>
+//            <small>${this.date}</small>
+//          </div>
+ //         <p class="mb-1">${this.body}
+ //         </p>
+ //         <small>${this.User.username}</small>
+  //      </a>
+        
+ //       `);
+        
+ //       $("#posts").append(a);
+ //     }
+    })
+
+
+  }
+
+  $("nav-item").on("click", function (event) {
+    event.preventDefault();
+
+    renderReviews();
+  }
+  renderReviews();
+
+</script>
