@@ -5,25 +5,22 @@
       <h2 class="mainpage">QC Taste</h2>
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" href="#" onclick="return {{this.category}}">Chinese</a>
+          <a class="nav-link active" href="#" id="italian">Italian</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Italian</a>
+          <a class="nav-link" href="#" id="american">American</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">American</a>
+          <a class="nav-link" href="#" id="indian">Indian</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Indian</a>
+          <a class="nav-link" href="#" id="latin">Latin</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Mexican</a>
+          <a class="nav-link" href="#" id="asian">Asian</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Japanese</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Seafood</a>
+          <a class="nav-link" href="#" id="seafood">Seafood</a>
         </li>
         <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Make A New Post!</a>
@@ -70,3 +67,25 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/members.js"></script>
+<script type="text/javascript">
+
+  function renderReviews() {
+    $(".nav-link").empty();
+
+    for (var i = 0; i < categories.length; i++) {
+      var a = $("<a>");
+      a.addClass("active");
+     
+      $("#nav-link").append(a);
+    }
+
+  }
+
+  $("nav-item").on("click", function (event) {
+    event.preventDefault();
+
+    renderReviews();
+  }
+  renderReviews();
+
+</script>
