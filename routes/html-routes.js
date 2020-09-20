@@ -3,13 +3,9 @@ const path = require("path");
 
 // Requiring our custom middleware for checking if a user is logged in
 const isAuthenticated = require("../config/middleware/isAuthenticated");
-<<<<<<< HEAD
-const db = require("../models")
-=======
 
 const db = require("../models")
 
->>>>>>> 16d211970d9f958b92dcc189261e76c2154af935
 module.exports = function(app) {
   app.get("/", (req, res) => {
     // If the user already has an account send them to the members page
@@ -32,10 +28,6 @@ module.exports = function(app) {
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/members", isAuthenticated, (req, res) => {
 
-<<<<<<< HEAD
-
-    res.render("members")
-=======
     db.Review.findAll({
       include: [db.Restaurant, db.User]
     })
@@ -48,7 +40,6 @@ module.exports = function(app) {
     })
 
 
->>>>>>> 16d211970d9f958b92dcc189261e76c2154af935
   });
 
   // app.get ("/members")
