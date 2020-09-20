@@ -10,7 +10,12 @@ module.exports = function (app) {
             include: [
                 {
                     model: db.Restaurant,
-                    include: [db.Review]
+                    include: [
+                        {
+                            model: db.Review,
+                            include: [db.User]
+                        }
+                    ]
                 }
             ]
         }).then(categories => {
