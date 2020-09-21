@@ -22,7 +22,7 @@ module.exports = function (app) {
     db.Restaurant.create({
       UserId: req.user.id,
       //UserId: 1,
-      //CategoryId: req.body.categoryId,
+      CategoryId: req.body.categoryId,
       name: req.body.name
     }).then(newRestaurant => {
       res.json(newRestaurant);
