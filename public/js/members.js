@@ -4,4 +4,8 @@ $(document).ready(() => {
   $.get("/api/user_data").then(data => {
     $(".member-name").text(data.username);
   });
+
+  $("#main-button").click(function () {
+    window.location.replace("/members_post");
+  });
 });

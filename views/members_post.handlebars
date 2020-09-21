@@ -1,7 +1,7 @@
 <div class="container border-0">
   <div class="row">
     <div class="col-md-6 bg-light member-post" id="post-form">
-      <h2 class="postform">Post <span class="member-name"></span></h2>
+      <h2 class="postform">Make Post<span></span></h2>
       <form class="member-post">
         <div class="form-group">
           <label for="exampleFormControlInput1">Post Title</label>
@@ -14,8 +14,8 @@
         <div class="form-group">
           <label for="exampleFormControlSelect1">Category</label>
           <select class="form-control" id="exampleFormControlSelect1">
-          {{#each category}}
-            <option value="{{this.value}}">{{this.category}}</option>
+          {{#each Category}}
+            <option value="{{dataValues.id}}">{{dataValues.name}}</option>
             {{!-- <option value="2">American</option>
             <option value="3">Indian</option>
             <option value="4">Japanese</option>
