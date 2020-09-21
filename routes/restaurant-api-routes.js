@@ -20,8 +20,9 @@ module.exports = function (app) {
 
   app.post("/api/restaurants", (req, res) => {
     db.Restaurant.create({
-      // UserId: req.user.id,
-      UserId: 1,
+      UserId: req.user.id,
+      //UserId: 1,
+      CategoryId: req.body.categoryId,
       name: req.body.name
     }).then(newRestaurant => {
       res.json(newRestaurant);

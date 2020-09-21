@@ -1,0 +1,78 @@
+<div class="container border-0" style="max-width: 100%; max-height: 100% animate__animated animate__fadeInLeft animate__delay-1s">
+  <div class="row">
+    <div class="col-md-6 bg-light member-main" id="main">
+      <!-- <h2 class="postform">Welcome <span class="member-name"></span></h2> -->
+      <h2 class="mainpage">QC Taste</h2>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" data-cat_id="1" id="1">Italian</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-cat_id="2" id="2">American</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-cat_id="3" id="3">Indian</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-cat_id="4" id="4">Latin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-cat_id="5" id="5">Asian</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-cat_id="6" id="6">Seafood</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Make A New Post!</a>
+          </li> -->
+      </ul>
+      <div class="list-group" id="posts">
+      </div>
+      <button type="submit" class="btn btn-outline-dark" id="main-button">Make A New Post!</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/members.js"></script>
+<script type="text/javascript">
+
+  function renderReviews(id) {
+    $.ajax({
+      type: "GET",
+      url: "/api/categories/" + id
+    }).then(data => {
+      console.log(data);
+      $("#posts").empty();
+      console.log(data[0].Restaurants)
+      for (var i = 0; i < data[0].Restaurants.length; i++) {
+        const restaurantName = data[0].Restaurants[i].name
+        data[0].Restaurants[i].Reviews.forEach(val => {
+          var a = $(`
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1" id="restaurant-name">${restaurantName}</h5>
+              <small>${val.createdAt}</small>
+            </div>
+            <p class="mb-1">${val.body}
+          </p>
+          <small>${val.User.username}</small>
+          </a>
+          `);
+          $("#posts").append(a);
+        })
+
+     }       
+    })
+  }
+
+  $(".nav-item").on("click", function (event) {
+    event.preventDefault();
+
+    $(".nav-tabs a").removeClass("active");
+    $(this).children("a").addClass("active");
+    renderReviews(event.target.id);
+  })
+  renderReviews(1);
+
+</script>

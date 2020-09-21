@@ -11,6 +11,25 @@ body {
     background-attachment: fixed;
 }
 
+
+/* .container {
+  float: right;
+  background-color: white;
+  width: 35%;
+  height: 60vh;
+  margin-right: 160px;
+  margin-top: 160px;
+  border-radius: 15px;
+}
+.logo {
+  float: right;
+  width: 35%;
+  height: 60vh;
+  margin-right: 160px;
+  margin-top: 160px;
+  border-radius: 15px;
+} */
+
 .vCenter {
     display: flex;
     flex-direction: column;
@@ -37,6 +56,15 @@ body {
     border-radius: 15px;
 }
 
+.member-post-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+    border-radius: 15px;
+}
+
 .member-main {
     display: flex;
     flex-direction: column;
@@ -47,6 +75,12 @@ body {
     padding-right: -130px;
     border-radius: 15px;
 }
+
+
+/* #posts {
+  margin-right: -30px;
+  margin-left: -30px;
+} */
 
 .signup {
     display: flex;
@@ -100,6 +134,20 @@ body {
     margin-bottom: 25px;
 }
 
+#restaurant-name {
+    font-family: 'Syne', sans-serif;
+    /* color:rgb(35, 49, 44); */
+}
+
+#post-title {
+    font-family: 'Roboto', sans-serif;
+}
+
+small {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
 .logform {
     text-align: center;
     font-family: 'Syne', sans-serif;
@@ -123,9 +171,12 @@ body {
     margin-bottom: 25px;
 }
 
-.img-beer {
-    width: 600px;
-}
+
+/* h2 {
+  text-align: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 45px;
+} */
 
 label {
     font-family: 'Quicksand', sans-serif;
@@ -137,8 +188,8 @@ p {
     font-size: 16px;
 }
 
-button {
-    font-family: 'Syne', sans-serif;
+html.is-animating .transition-fade {
+    opacity: 0;
 }
 
 button:hover {
@@ -157,17 +208,4 @@ footer {
     font-family: 'Quicksand', sans-serif;
     font-size: 17px;
     background-image: url("restaurant_photo.jpg");
-}
-
-.transition-fade {
-    opacity: 1;
-    transition: 500ms;
-}
-
-html.is-animating .transition-fade {
-    opacity: 0;
-}
-
-html.is-leaving .transition-fade {
-    opacity: 0;
 }
