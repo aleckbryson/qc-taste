@@ -4,12 +4,13 @@ form.login {
 }
 
 body {
-  background-image: url("restaurant_photo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  background-attachment: fixed;
+    background-image: url("restaurant_photo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
+
 
 /* .container {
   float: right;
@@ -30,50 +31,51 @@ body {
 } */
 
 .vCenter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .login {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 15px;
 }
 
 .member-post {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  margin: auto;
-  border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+    border-radius: 15px;
 }
 
 .member-post-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  margin: auto;
-  border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+    border-radius: 15px;
 }
 
 .member-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  margin: auto;
-  padding-left: -130px;
-  padding-right: -130px;
-  border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: auto;
+    padding-left: -130px;
+    padding-right: -130px;
+    border-radius: 15px;
 }
+
 
 /* #posts {
   margin-right: -30px;
@@ -81,93 +83,94 @@ body {
 } */
 
 .signup {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 15px;
 }
 
 #qc {
-  color: white;
-  font-size: 140px;
-  text-align: center;
-  font-family: 'Permanent Marker', cursive;
-  margin-top: 220px;
+    color: white;
+    font-size: 140px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 220px;
 }
 
 #taste {
-  color: white;
-  font-size: 90px;
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
-  margin-bottom: 170px;
+    color: white;
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    margin-bottom: 170px;
 }
 
 #login-form {
-  margin-top: 170px;
+    margin-top: 170px;
 }
 
 #signup-form {
-  margin-top: 130px;
+    margin-top: 130px;
 }
 
 #post-form {
-  margin-top: 130px;
-  padding: auto;
+    margin-top: 130px;
+    padding: auto;
 }
 
 #main {
-  margin-top: 100px;
-  padding: auto;
+    margin-top: 100px;
+    padding: auto;
 }
 
 #post-button {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 #main-button {
-  margin-top: 20px;
-  margin-bottom:25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 #restaurant-name {
-  font-family: 'Syne', sans-serif;
-  /* color:rgb(35, 49, 44); */
+    font-family: 'Syne', sans-serif;
+    /* color:rgb(35, 49, 44); */
 }
 
-#post-title{
-  font-family: 'Roboto', sans-serif;
+#post-title {
+    font-family: 'Roboto', sans-serif;
 }
 
 small {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 .logform {
-  text-align: center;
-  font-family: 'Syne', sans-serif;
-  font-size: 45px;
-  margin-top: 25px;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-size: 45px;
+    margin-top: 25px;
 }
 
 .postform {
-  text-align: center;
-  font-family: 'Syne', sans-serif;
-  font-size: 45px;
-  margin-top: 20px;
-  margin-bottom: 25px;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
-.mainpage{
-  text-align: center;
-  font-family: 'Syne', sans-serif;
-  font-size: 45px;
-  margin-top: 20px;
-  margin-bottom: 25px;
+.mainpage {
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
+
 
 /* h2 {
   text-align: center;
@@ -176,33 +179,33 @@ small {
 } */
 
 label {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
 }
 
 p {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
 }
 
-button {
-  font-family: 'Syne', sans-serif;
+html.is-animating .transition-fade {
+    opacity: 0;
 }
 
 button:hover {
-  color: white;
+    color: white;
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:rgb(207, 36, 36);
-  color: white;
-  text-align: center;
-  padding-bottom: 20px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 17px;
-  background-image: url("restaurant_photo.jpg");
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(207, 36, 36);
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    background-image: url("restaurant_photo.jpg");
 }

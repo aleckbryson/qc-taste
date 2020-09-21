@@ -1,8 +1,8 @@
 {
     "development": {
         "username": "root",
-        "password": "8287141Gk!",
-        "database": "qc_taste",
+        "password": "rootroot",
+        "database": "QC_TASTE",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },
