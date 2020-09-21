@@ -42,5 +42,20 @@ module.exports = function(app) {
 
   });
 
+  app.get("/members_post", isAuthenticated, (req, res) => {
+
+    db.Category.findAll({
+    })
+    .then(categories => {
+      console.log(categories)
+      res.render("members_post", { categories: categories})
+    })
+    .catch(err => {
+      console.log(err)
+    })
+
+
+  });
+
   // app.get ("/members")
 };

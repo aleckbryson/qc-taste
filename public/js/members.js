@@ -5,4 +5,7 @@ $(document).ready(() => {
     $(".member-name").text(data.username);
   });
 
+  $("#main-button").click(function () {
+    window.location.replace("/members_post");
+  });
 });
