@@ -70,8 +70,8 @@
   $(".nav-item").on("click", function (event) {
     event.preventDefault();
 
-    const activeButton = $("<a>");
-    activeButton.addClass("active");
+    $(".nav-tabs a").removeClass("active");
+    $(this).children("a").addClass("active");
     renderReviews(event.target.id);
   })
   renderReviews(1);
